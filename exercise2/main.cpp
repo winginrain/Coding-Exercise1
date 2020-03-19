@@ -54,7 +54,7 @@ int main()
             n++;
             if(tradesData->Type == 'T'){
                 // printf("Pack %06d:PacketLength=%hd,MarketUpdate=%hd, Length=%hd,Type=%c,Symbol=%s,Size=%hd,Price=%lg,Dynamic Data Length=%d\n", n, PacketLength, MarketUpdate, Length, Type, Symbol, Size, Price, DL);
-                // printf("%d %s @ %.2f\n", tradesData->Size, tradesData->Symbol, (double)tradesData->Price/10000);
+                printf("%d %s @ %.2f\n", tradesData->Size, tradesData->Symbol, (double)tradesData->Price/10000);
                 fprintf(fout,"%d %s @ %.2f\n", tradesData->Size, tradesData->Symbol, (double)tradesData->Price/10000);
             }
         }
